@@ -1,0 +1,122 @@
+{
+  "project_info": {
+    "project_number": "601893035389",
+    "firebase_url": "https://flutter-uber-clone-with-5b96e-default-rtdb.firebaseio.com",
+    "project_id": "flutter-uber-clone-with-5b96e",
+    "storage_bucket": "flutter-uber-clone-with-5b96e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:601893035389:android:7865cb92ce7d935d4d4014",
+        "android_client_info": {
+          "package_name": "com.NoureddinSameer.boombest_driver"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "601893035389-1hh8uvf7qpk2htt5jug34r60j1fkj17t.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.NoureddinSameer.boombest_driver",
+            "certificate_hash": "bc6d47e6aa4f7203975427d1286c069c3879045b"
+          }
+        },
+        {
+          "client_id": "601893035389-cvebre4j4vua1hcs4bjbt3os97ioa704.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD4yVb55UPD-gzvX_UcZDFE1QPHsIOAOUs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "601893035389-cvebre4j4vua1hcs4bjbt3os97ioa704.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:601893035389:android:b734c3cc798014c44d4014",
+        "android_client_info": {
+          "package_name": "com.NoureddinSameer.drivers_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "601893035389-7j75qds6suppra9il74oaj99ni0g9lvr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.NoureddinSameer.drivers_app",
+            "certificate_hash": "bc6d47e6aa4f7203975427d1286c069c3879045b"
+          }
+        },
+        {
+          "client_id": "601893035389-cvebre4j4vua1hcs4bjbt3os97ioa704.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD4yVb55UPD-gzvX_UcZDFE1QPHsIOAOUs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "601893035389-cvebre4j4vua1hcs4bjbt3os97ioa704.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:601893035389:android:6c42153fcb3be8144d4014",
+        "android_client_info": {
+          "package_name": "com.training.ecommerce"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "601893035389-003dljdcj1h0j40i9k5thfr1v3potkd4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.training.ecommerce",
+            "certificate_hash": "bc6d47e6aa4f7203975427d1286c069c3879045b"
+          }
+        },
+        {
+          "client_id": "601893035389-cvebre4j4vua1hcs4bjbt3os97ioa704.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD4yVb55UPD-gzvX_UcZDFE1QPHsIOAOUs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "601893035389-cvebre4j4vua1hcs4bjbt3os97ioa704.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
