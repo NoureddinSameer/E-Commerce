@@ -3,11 +3,18 @@ package com.training.ecommerce
 import android.animation.ObjectAnimator
 import android.os.Build
 import android.os.Bundle
+import android.util.Log
 import android.view.View
 import android.view.animation.AnticipateInterpolator
+import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.animation.doOnEnd
 import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
+import androidx.lifecycle.lifecycleScope
+import com.training.ecommerce.utils.AddToCartException
+import com.training.ecommerce.utils.CrashlyticsUtils
+import kotlinx.coroutines.Dispatchers.Main
+import kotlinx.coroutines.launch
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -18,7 +25,24 @@ class MainActivity : AppCompatActivity() {
 //
 //            }
         setContentView(R.layout.activity_main)
+        findViewById<TextView>(R.id.textView).setOnClickListener{
+            Log.d("MainActivity","Crash button Clicked")
 
+            lifecycleScope.launch(Main) {
+                CrashlyticsUtils.sendLogToCrashlytics(
+                    "Crash button clicked",
+                    "button",
+                    "clicked",
+                    "crash"
+                )
+                val msg= "Crash button clicked"
+                CrashlyticsUtils.sendCustomLogToCrashlytics<AddToCartException>(
+                    msg,
+                    Pair(CrashlyticsUtils.ADD_TOCART_KEY,"ad to card button clicked"),
+                )
+                throw AddToCartException(msg)
+            }
+        }
     }
 
     private fun initSplashScreen() {
