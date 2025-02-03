@@ -20,29 +20,8 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         initSplashScreen()
         super.onCreate(savedInstanceState)
-//        Firestore.instance("/products/celpyYcw7lpI60c3lSOd/reviews/JdpFvSNMcrTo3986Ps9o")
-//            .get(){
-//
-//            }
-        setContentView(R.layout.activity_main)
-        findViewById<TextView>(R.id.textView).setOnClickListener{
-            Log.d("MainActivity","Crash button Clicked")
 
-            lifecycleScope.launch(Main) {
-                CrashlyticsUtils.sendLogToCrashlytics(
-                    "Crash button clicked",
-                    "button",
-                    "clicked",
-                    "crash"
-                )
-                val msg= "Crash button clicked"
-                CrashlyticsUtils.sendCustomLogToCrashlytics<AddToCartException>(
-                    msg,
-                    Pair(CrashlyticsUtils.ADD_TOCART_KEY,"ad to card button clicked"),
-                )
-                throw AddToCartException(msg)
-            }
-        }
+        setContentView(R.layout.activity_main)
     }
 
     private fun initSplashScreen() {
